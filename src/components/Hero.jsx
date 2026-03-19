@@ -67,7 +67,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl w-full flex flex-col md:flex-row items-center md:items-center gap-10 md:gap-16">
+      <div className="relative z-10 max-w-5xl w-full flex flex-col md:flex-row items-center md:items-center gap-10 md:gap-14">
         {/* Profile picture */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -77,13 +77,13 @@ export default function Hero() {
         >
           <div className="relative">
             <div
-              className="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-accent-blue/30 bg-navy-800"
+              className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-accent-blue/30 bg-navy-800"
               style={{ boxShadow: '0 0 60px rgba(79,142,247,0.25)' }}
             >
               <Avatar />
             </div>
             {/* Online indicator */}
-            <div className="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-emerald-400 border-2 border-navy-950" />
+            <div className="absolute bottom-3 right-3 w-5 h-5 rounded-full bg-emerald-400 border-2 border-navy-950" />
           </div>
         </motion.div>
 
@@ -91,23 +91,23 @@ export default function Hero() {
         <div className="text-center md:text-left">
           <motion.h1
             {...fadeUp(0.1)}
-            className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-[#F0F4FF]"
+            className="text-4xl md:text-5xl font-bold tracking-tight mb-3 text-[#F0F4FF]"
           >
             Usama Ahmed
           </motion.h1>
 
-          <motion.div {...fadeUp(0.2)} className="mb-6">
-            <span className="text-xl md:text-2xl font-light text-gradient">
+          <motion.div {...fadeUp(0.2)} className="mb-4">
+            <span className="text-base md:text-lg font-light text-gradient">
               Data Scientist
             </span>
-            <span className="text-xl md:text-2xl font-light text-[#8899BB]">
+            <span className="text-base md:text-lg font-light text-[#8899BB]">
               {' '}· Synthetic Data · Financial AI · Information Retrieval
             </span>
           </motion.div>
 
           <motion.p
             {...fadeUp(0.3)}
-            className="text-[#8899BB] text-base md:text-lg max-w-2xl leading-relaxed mb-10"
+            className="text-[#8899BB] text-sm md:text-base max-w-xl leading-relaxed mb-8"
           >
             I build end-to-end ML pipelines — from synthetic data generation and
             weak supervision to model training and production deployment.
@@ -118,7 +118,7 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             {...fadeUp(0.4)}
-            className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10"
+            className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-8"
           >
             <a
               href="#projects"
