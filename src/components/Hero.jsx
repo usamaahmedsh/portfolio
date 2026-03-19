@@ -67,94 +67,97 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl">
+      <div className="relative z-10 max-w-5xl w-full flex flex-col md:flex-row items-center md:items-center gap-10 md:gap-16">
         {/* Profile picture */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-center mb-8"
+          className="shrink-0"
         >
           <div className="relative">
             <div
-              className="w-28 h-28 rounded-full overflow-hidden border-2 border-accent-blue/30 bg-navy-800"
-              style={{ boxShadow: '0 0 40px rgba(79,142,247,0.2)' }}
+              className="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-accent-blue/30 bg-navy-800"
+              style={{ boxShadow: '0 0 60px rgba(79,142,247,0.25)' }}
             >
               <Avatar />
             </div>
             {/* Online indicator */}
-            <div className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-400 border-2 border-navy-950" />
+            <div className="absolute bottom-2 right-2 w-5 h-5 rounded-full bg-emerald-400 border-2 border-navy-950" />
           </div>
         </motion.div>
 
-        <motion.h1
-          {...fadeUp(0.1)}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-[#F0F4FF]"
-        >
-          Usama Ahmed
-        </motion.h1>
-
-        <motion.div {...fadeUp(0.2)} className="mb-6">
-          <span className="text-xl md:text-2xl font-light text-gradient">
-            Data Scientist
-          </span>
-          <span className="text-xl md:text-2xl font-light text-[#8899BB]">
-            {' '}· Synthetic Data · Financial AI · Information Retrieval
-          </span>
-        </motion.div>
-
-        <motion.p
-          {...fadeUp(0.3)}
-          className="text-[#8899BB] text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
-        >
-          I build end-to-end ML pipelines — from synthetic data generation and
-          weak supervision to model training and production deployment.
-          MS Data Science, University of Arizona (Presidential Scholar).
-          Previously at Pi Labs and Afiniti Software Solutions.
-        </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          {...fadeUp(0.4)}
-          className="flex flex-wrap items-center justify-center gap-4 mb-14"
-        >
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-lg bg-accent-blue text-white font-medium text-sm hover:bg-blue-500 transition-all duration-200 glow-blue"
+        {/* Text content */}
+        <div className="text-center md:text-left">
+          <motion.h1
+            {...fadeUp(0.1)}
+            className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-[#F0F4FF]"
           >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 rounded-lg border border-navy-700 text-[#F0F4FF] font-medium text-sm hover:border-accent-blue/50 hover:bg-accent-blue/5 transition-all duration-200"
-          >
-            Get in Touch
-          </a>
-        </motion.div>
+            Usama Ahmed
+          </motion.h1>
 
-        {/* Social links */}
-        <motion.div
-          {...fadeUp(0.5)}
-          className="flex items-center justify-center gap-6"
-        >
-          {[
-            { icon: Github, href: 'https://github.com/usamaahmedsh', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://linkedin.com/in/usamaahmedsh', label: 'LinkedIn' },
-            { icon: ExternalLink, href: 'https://huggingface.co/usamaahmedsh', label: 'HuggingFace' },
-            { icon: Mail, href: 'mailto:usamaahmed@arizona.edu', label: 'Email' },
-          ].map(({ icon: Icon, href, label }) => (
+          <motion.div {...fadeUp(0.2)} className="mb-6">
+            <span className="text-xl md:text-2xl font-light text-gradient">
+              Data Scientist
+            </span>
+            <span className="text-xl md:text-2xl font-light text-[#8899BB]">
+              {' '}· Synthetic Data · Financial AI · Information Retrieval
+            </span>
+          </motion.div>
+
+          <motion.p
+            {...fadeUp(0.3)}
+            className="text-[#8899BB] text-base md:text-lg max-w-2xl leading-relaxed mb-10"
+          >
+            I build end-to-end ML pipelines — from synthetic data generation and
+            weak supervision to model training and production deployment.
+            MS Data Science, University of Arizona (Presidential Scholar).
+            Previously at Pi Labs and Afiniti Software Solutions.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            {...fadeUp(0.4)}
+            className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10"
+          >
             <a
-              key={label}
-              href={href}
-              target={href.startsWith('http') ? '_blank' : undefined}
-              rel="noopener noreferrer"
-              aria-label={label}
-              className="text-[#8899BB] hover:text-accent-blue transition-colors duration-200"
+              href="#projects"
+              className="px-6 py-3 rounded-lg bg-accent-blue text-white font-medium text-sm hover:bg-blue-500 transition-all duration-200 glow-blue"
             >
-              <Icon size={20} />
+              View Projects
             </a>
-          ))}
-        </motion.div>
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-lg border border-navy-700 text-[#F0F4FF] font-medium text-sm hover:border-accent-blue/50 hover:bg-accent-blue/5 transition-all duration-200"
+            >
+              Get in Touch
+            </a>
+          </motion.div>
+
+          {/* Social links */}
+          <motion.div
+            {...fadeUp(0.5)}
+            className="flex items-center justify-center md:justify-start gap-6"
+          >
+            {[
+              { icon: Github, href: 'https://github.com/usamaahmedsh', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://linkedin.com/in/usamaahmedsh', label: 'LinkedIn' },
+              { icon: ExternalLink, href: 'https://huggingface.co/usamaahmedsh', label: 'HuggingFace' },
+              { icon: Mail, href: 'mailto:usamaahmed@arizona.edu', label: 'Email' },
+            ].map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="text-[#8899BB] hover:text-accent-blue transition-colors duration-200"
+              >
+                <Icon size={20} />
+              </a>
+            ))}
+          </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
