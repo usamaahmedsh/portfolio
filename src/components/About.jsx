@@ -27,7 +27,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="flex items-center gap-3 mb-12">

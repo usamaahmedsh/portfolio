@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden"
+      className="relative min-h-[80vh] flex flex-col items-center justify-center px-6 overflow-hidden"
     >
       {/* Background grid */}
       <div
@@ -131,6 +131,14 @@ export default function Hero() {
               className="px-6 py-3 rounded-lg border border-navy-700 text-[#F0F4FF] font-medium text-sm hover:border-accent-blue/50 hover:bg-accent-blue/5 transition-all duration-200"
             >
               Get in Touch
+            </a>
+            <a
+              href="/portfolio/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-lg border border-navy-700 text-[#8899BB] font-medium text-sm hover:border-accent-blue/50 hover:text-[#F0F4FF] transition-all duration-200"
+            >
+              Resume ↗
             </a>
           </motion.div>
 
