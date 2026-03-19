@@ -29,11 +29,11 @@ export const financialPipeline = [
     details:
       'Extracts real pattern statistics, models them with Multivariate Normal distributions and Dirichlet posteriors via PyMC. Four-tier validation pipeline: Elliott Wave rules, Fibonacci proximity, statistical quality, and diversity coverage optimization. Outputs balanced labeled Parquet datasets published to HuggingFace Hub.',
     tech: ['PyMC', 'PyTensor', 'NumPy', 'SciPy', 'Scikit-learn', 'HuggingFace Hub', 'FastParquet'],
-    input: 'Real EW Pattern Statistics',
-    output: '280K+ Synthetic Records',
+    input: 'Detected Wave Patterns',
+    output: '30M+ Synthetic Records',
     color: '#00D4FF',
     metrics: [
-      { label: 'Scale', value: '280K+', sub: 'synthetic wave records' },
+      { label: 'Scale', value: '30M+', sub: 'synthetic wave records' },
       { label: 'Validation', value: '4-tier', sub: 'EW rules, Fibonacci, quality, diversity' },
       { label: 'Method', value: 'Bayesian', sub: 'MVN + Dirichlet posteriors' },
       { label: 'Format', value: 'Parquet', sub: 'published to HuggingFace Hub' },
@@ -49,7 +49,7 @@ export const financialPipeline = [
     details:
       'Fibonacci-based feature engineering over pattern geometry and wave ratios. Cross-validated hyperparameter optimization via Optuna across distributed training with PySpark and Dask. Full MLOps pipeline: training on S3 data → SageMaker endpoint for real-time scoring of candidate wave patterns.',
     tech: ['XGBoost', 'Optuna', 'PySpark', 'Dask', 'AWS SageMaker', 'S3', 'boto3', 'Scikit-learn'],
-    input: '280K Synthetic Training Set',
+    input: '30M Synthetic Training Set',
     output: 'Probability Scores (0–1)',
     color: '#8B5CF6',
     metrics: [
@@ -175,7 +175,7 @@ export const otherProjects = [
     repo: 'https://github.com/usamaahmedsh/DataVisualization-Project-MessiVsRonaldo',
     description:
       'Interactive data visualization comparing career statistics of two football legends across clubs, seasons, and competitions. Data storytelling through custom chart design.',
-    tech: ['Python', 'Plotly', 'Pandas', 'Seaborn'],
+    tech: ['R', 'ggplot2', 'Plotly', 'dplyr'],
     tags: ['Data Visualization', 'Sports Analytics'],
   },
 ]
@@ -242,18 +242,7 @@ export const skills = [
   },
 ]
 
-export const experience = [
-  {
-    role: 'Research Assistant',
-    org: 'University of Arizona',
-    location: 'Tucson, AZ',
-    period: 'Jan 2025 – Present',
-    bullets: [
-      'Conducted applied research on improving logical reasoning in LLMs; synthesized a 30K-example training corpus, designed and fine-tuned models on controlled training distributions, and reported results with reproducible evaluation pipelines.',
-      'Designed and executed 6 end-to-end experiments — data collection, corpus synthesis, model training, and evaluation — applying statistical hypothesis testing, effect-size analysis, and ablation studies to drive evidence-based conclusions.',
-      'Built reproducible measurement frameworks to track model performance across experiments; surfaced actionable insights and communicated findings for both technical and non-technical audiences.',
-    ],
-  },
+export const industryExperience = [
   {
     role: 'GenAI Intern',
     org: 'Pi Labs, Inc.',
@@ -263,16 +252,6 @@ export const experience = [
       'Developed and shipped AI-powered search and ranking pipelines integrating BM25, dense retrieval, and query fan-out mechanisms; improved document recall, precision, and ranking relevance at production scale.',
       'Engineered synthetic data generation workflows using GPT-4o and Claude 3.5 to produce 2.17M diverse query–document pairs; benchmarked neural vs. lexical retrieval against the full MS MARCO dataset (8.8M passages) to drive search quality improvements.',
       'Designed offline evaluation frameworks defining IR metrics (F1, recall@k, nDCG) and automating gold-label generation; communicated quality, latency, and cost tradeoffs to non-technical stakeholders, directly influencing production architecture decisions.',
-    ],
-  },
-  {
-    role: 'Graduate Teaching Assistant — SQL/NoSQL',
-    org: 'University of Arizona',
-    location: 'Tucson, AZ',
-    period: 'Jan 2025 – May 2025',
-    bullets: [
-      'Assisted 50+ students in mastering SQL and NoSQL databases covering indexing, query optimization, and data modeling; led 10+ recitation sessions and 20+ office hours.',
-      'Graded 100+ assignments on SQL queries, NoSQL schema designs, and ETL processes; mentored students on CAP theorem, data consistency models, and scalability strategies.',
     ],
   },
   {
@@ -295,6 +274,30 @@ export const experience = [
     bullets: [
       'Designed and conducted a hypothesis-driven experiment on 10K+ vehicle auctions to test regression-based assignment; built a Bayesian probabilistic classification system that boosted auction success rate by 20% and predicted a 3% revenue increase.',
       'Delivered recurring data-driven insights and self-service reporting to senior leadership, informing product prioritization and preventing a PKR 40 million loss through quantitative harm mitigation.',
+    ],
+  },
+]
+
+export const researchExperience = [
+  {
+    role: 'Research Assistant',
+    org: 'University of Arizona',
+    location: 'Tucson, AZ',
+    period: 'Jan 2025 – Present',
+    bullets: [
+      'Conducted applied research on improving logical reasoning in LLMs; synthesized a 30K-example training corpus, designed and fine-tuned models on controlled training distributions, and reported results with reproducible evaluation pipelines.',
+      'Designed and executed 6 end-to-end experiments — data collection, corpus synthesis, model training, and evaluation — applying statistical hypothesis testing, effect-size analysis, and ablation studies to drive evidence-based conclusions.',
+      'Built reproducible measurement frameworks to track model performance across experiments; surfaced actionable insights and communicated findings for both technical and non-technical audiences.',
+    ],
+  },
+  {
+    role: 'Graduate Teaching Assistant — SQL/NoSQL',
+    org: 'University of Arizona',
+    location: 'Tucson, AZ',
+    period: 'Jan 2025 – May 2025',
+    bullets: [
+      'Assisted 50+ students in mastering SQL and NoSQL databases covering indexing, query optimization, and data modeling; led 10+ recitation sessions and 20+ office hours.',
+      'Graded 100+ assignments on SQL queries, NoSQL schema designs, and ETL processes; mentored students on CAP theorem, data consistency models, and scalability strategies.',
     ],
   },
 ]

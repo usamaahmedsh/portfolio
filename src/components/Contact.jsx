@@ -59,9 +59,10 @@ export default function Contact() {
               Get in touch
             </h3>
             <p className="text-[#8899BB] text-sm leading-relaxed mb-4">
-              I'm always interested in discussing ML research, data pipelines,
-              or interesting problems in AI and retrieval systems. Feel free to
-              reach out through any of the channels below.
+              I'm actively looking for full-time opportunities in data science,
+              machine learning, and AI — feel free to reach out if you think
+              there's a fit. I'm also always happy to discuss ML research,
+              data pipelines, or interesting problems in AI and retrieval systems.
             </p>
             <p className="text-[#8899BB] text-sm leading-relaxed mb-6">
               My work spans synthetic data generation, information retrieval,

@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { experience } from '../data/projects'
+import { industryExperience, researchExperience } from '../data/projects'
 
 function ExperienceCard({ item, index }) {
   const ref = useRef(null)
@@ -65,7 +65,17 @@ export default function Experience() {
         </motion.div>
 
         <div className="max-w-3xl">
-          {experience.map((item, i) => (
+          <h3 className="text-sm font-mono text-accent-blue tracking-widest uppercase mb-6">
+            Industry &amp; Internships
+          </h3>
+          {industryExperience.map((item, i) => (
+            <ExperienceCard key={item.org + item.role} item={item} index={i} />
+          ))}
+
+          <h3 className="text-sm font-mono text-accent-blue tracking-widest uppercase mb-6 mt-4">
+            Research &amp; Teaching
+          </h3>
+          {researchExperience.map((item, i) => (
             <ExperienceCard key={item.org + item.role} item={item} index={i} />
           ))}
         </div>

@@ -7,7 +7,7 @@ import { PipelineNode, PipelineArrow, MobileArrow, NodeDetailPanel } from './Pip
 const clusterStats = {
   financial: [
     { icon: Database, label: 'Asset Classes', value: '10+' },
-    { icon: TrendingUp, label: 'Synthetic Records', value: '280K+' },
+    { icon: TrendingUp, label: 'Synthetic Records', value: '30M+' },
     { icon: Brain, label: 'Deployment', value: 'AWS SageMaker' },
   ],
   ir: [

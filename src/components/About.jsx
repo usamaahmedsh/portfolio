@@ -19,7 +19,7 @@ function AnimatedSection({ children, className = '' }) {
 }
 
 const highlights = [
-  { value: '3+', label: 'Years Industry Experience' },
+  { value: '3+', label: 'Years of Experience' },
   { value: '2.17M', label: 'Query–Doc Pairs Generated' },
   { value: '$5M', label: 'Monthly Retention Uplift' },
   { value: '6.5×', label: 'Latency Improvement (vLLM)' },
@@ -60,9 +60,9 @@ export default function About() {
           <AnimatedSection>
             <div className="space-y-4 text-[#8899BB] leading-relaxed">
               <p>
-                I'm a Data Scientist with 3+ years of industry experience across
-                telecom, fintech, and AI startups, combined with graduate research
-                in machine learning at the University of Arizona.
+                I'm a Data Scientist with 3+ years of industry and research
+                experience across telecom, fintech, and AI startups, combined
+                with graduate research in machine learning at the University of Arizona.
               </p>
               <p>
                 My work sits at the intersection of{' '}
